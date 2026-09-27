@@ -1,26 +1,27 @@
 # Telecom Project Tracker
 
-A web-based Telecom Project Control Dashboard for monitoring work packages, purchase orders, site readiness, action tracking, and management attention.
+A cloud-based Telecom Project Control Dashboard for monitoring work packages, PO status, site readiness, action tracking, and management attention.
+
+![Telecom Project Tracker Dashboard](dashboard.png)
 
 ## Live Demo
 
 https://telecom-project-tracker.telkomproject-rifky.workers.dev/
 
-## Overview
+## What This Project Demonstrates
 
-Telecom Project Tracker is a portfolio project based on a realistic telecom project-control workflow.
+This project simulates a telecom project-control workflow using 320 anonymized/dummy work packages.
 
-The dashboard is designed to help a Project Controller / PMO / Project Coordinator monitor:
+It is designed around practical Project Controller / PMO activities:
 
-- Work package progress
-- PO status
-- TI / site readiness status
-- Attention level
-- Action owner and due date
-- Follow-up requirements
-- Management attention items
-
-The dataset contains 320 anonymized / dummy work packages for demonstration purposes.
+- Tracking telecom work packages
+- Monitoring PO status
+- Monitoring TI/site readiness
+- Identifying management attention
+- Assigning actions and owners
+- Tracking due dates
+- Reviewing project KPIs
+- Filtering and searching project data
 
 ## Key Features
 
@@ -35,36 +36,43 @@ The dataset contains 320 anonymized / dummy work packages for demonstration purp
 
 ### Project Tracker
 - Search
-- Region filter
-- SOW filter
-- PO Status filter
-- Attention filter
+- Region, SOW, PO Status and Attention filters
 - Editable project fields
-- Horizontal scrolling for detailed project data
-- Pagination with 25 records per page
+- Horizontal scrolling
+- 25 records per page
 - Direct page navigation
+- Selected project detail panel
 
-### Project Control
+### Project Control Logic
+
 Attention levels are automatically derived from project conditions:
 
-1. CRITICAL — Block Access
-2. HIGH — Not Started / PO Outstanding
-3. MEDIUM — PO Open
-4. NORMAL — No current management attention
+| Level | Condition |
+|---|---|
+| CRITICAL | Block Access |
+| HIGH | Not Started / PO Outstanding |
+| MEDIUM | PO Open |
+| NORMAL | No current management attention |
 
 ### Management Attention
-The dashboard highlights projects requiring follow-up, including:
 
-- Critical issues
-- High-priority follow-ups
-- Medium-priority PO actions
+The dashboard highlights projects requiring follow-up and shows:
+
+- Attention level
+- Site ID
+- Region
+- PO status
+- TI status
+- Reason
+- Required action
 - Action owner
 - Due date
-- Required action
 
 ## Technology Stack
 
-- HTML / CSS / JavaScript
+- HTML
+- CSS
+- JavaScript
 - Cloudflare Workers
 - Cloudflare D1
 - SQLite-compatible database
@@ -79,60 +87,49 @@ Browser
    v
 Cloudflare Workers
    |
-   +---- Static Dashboard
+   +---- Web Dashboard
    |
    +---- REST API
             |
             v
-      Cloudflare D1
-         SQLite
+       Cloudflare D1
+          SQLite
 ```
 
-## Data Model
+## Project Structure
 
-The tracker includes project-control fields such as:
-
-- Customer
-- Project
-- Region
-- Province
-- Site ID
-- New XL ID
-- SOW
-- Scope
-- PO Status
-- TI Status
-- Payment Status
-- WCC Status
-- Attention Reason
-- Attention Level
-- Action Required
-- Action Owner
-- Last Update
-- Action Due Date
-- Action Status
-- Days to Due
-- Follow-up Flag
-- Report Flag
-
-## Portfolio Note
-
-All project/company data used in this public demonstration are dummy or anonymized. The project is intended to demonstrate project-control, dashboard, data-management, and web application skills without exposing confidential project information.
+```text
+Telecom-Project-Tracker/
+├── public/
+│   └── index.html
+├── src/
+│   └── worker.js
+├── seed.sql
+├── wrangler.toml
+├── package.json
+├── README.md
+└── screenshots/
+```
 
 ## Skills Demonstrated
 
-- Project Control
+- Telecom Project Control
 - PMO workflow
-- Telecom project tracking
-- Data management
-- Dashboard design
-- KPI reporting
+- Project coordination
+- KPI dashboard design
 - Action tracking
+- Data management
 - REST API integration
 - SQLite / D1 database
 - Cloud deployment
-- Basic frontend development
+- Frontend development
+
+## Data & Privacy
+
+All project/company information in this public demonstration is dummy or anonymized and is not intended to represent confidential client data.
 
 ## Author
 
-Rifky Syukur Raharja
+**Rifky Syukur Raharja**
+
+Telecom Project Control | PMO | Project Coordination
