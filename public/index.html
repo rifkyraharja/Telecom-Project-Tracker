@@ -13,21 +13,92 @@
 .kpis{display:grid;grid-template-columns:repeat(5,minmax(150px,1fr));gap:14px}.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;box-shadow:0 2px 8px #0b1b3309}
 .klabel{font-size:11px;color:var(--muted);font-weight:700;letter-spacing:.5px}.kvalue{font-size:28px;font-weight:800;margin-top:8px}.kpct{font-size:12px;color:var(--muted);margin-top:2px}
 .filters{display:flex;flex-wrap:wrap;gap:9px;align-items:center;margin:16px 0}.filters input,.filters select,.filters button{height:38px;border:1px solid #cbd5e1;border-radius:8px;background:#fff;padding:0 11px;font-size:13px}.filters input{min-width:240px}.filters button{cursor:pointer;font-weight:700}.apply{background:var(--blue)!important;color:#fff;border-color:var(--blue)!important}.pill{padding:8px 11px;border-radius:20px;font-size:12px;font-weight:800}.crit{background:#fee4e2;color:#b42318}.high{background:#fff0d6;color:#b54708}
-.layout{display:grid;grid-template-columns:minmax(0,1fr) 240px;gap:12px;align-items:stretch}.tablecard{overflow:hidden}.tablewrap{overflow:auto;max-height:650px}.table{border-collapse:collapse;width:max-content;min-width:100%;font-size:12px;background:#fff}.table th{position:sticky;top:0;background:#eef3f8;color:#334155;text-align:left;padding:10px 9px;border-bottom:1px solid var(--line);white-space:nowrap;z-index:2}.table td{padding:9px;border-bottom:1px solid #edf1f5;white-space:nowrap}.table tr:hover{background:#f8fbff}.attention-CRITICAL{color:#b42318;font-weight:800}.attention-HIGH{color:#b54708;font-weight:800}.attention-MEDIUM{color:#9a6700;font-weight:800}.attention-NORMAL{color:#078a58;font-weight:700}
-.row-critical{background:#fff6f5!important}.row-high{background:#fffbf2!important}
-.badge{display:inline-block;padding:3px 7px;border-radius:999px;font-size:10px;font-weight:800;line-height:1.2}
-.badge-green{background:#e7f6ef;color:#087443}.badge-amber{background:#fff1dc;color:#a45100}.badge-red{background:#fee7e5;color:#b42318}.badge-blue{background:#e8f0ff;color:#175cd3}.badge-gray{background:#eef2f6;color:#475467}
-.overdue{background:#fee7e5;color:#b42318}.due-soon{background:#fff1dc;color:#a45100}
-.editable{cursor:pointer}.editable:hover{background:#edf6ff}.side{display:grid;grid-template-rows:auto auto 1fr;gap:10px;height:100%;min-height:100%}.chartbox{height:120px;display:flex;align-items:center;justify-content:center;position:relative}.donut{width:82px;height:82px;border-radius:50%;position:relative;background:conic-gradient(#078a58 0 61%,#d97706 61% 77%,#d92d20 77% 100%)}.donut:after{content:"";position:absolute;inset:18px;background:#fff;border-radius:50%}.legend{font-size:11px;display:grid;gap:5px}.legend span{display:flex;justify-content:space-between}.dot{width:9px;height:9px;border-radius:50%;display:inline-block;margin-right:7px}.detail h3{margin:0 0 8px;font-size:13px}.detail{min-height:0}.detail-grid{display:grid;grid-template-columns:78px 1fr;gap:5px;font-size:11px}.detail-grid b{color:var(--muted)}
-.management{margin-top:14px}.management-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px}.management-title{font-size:14px;font-weight:800}.management-sub{font-size:11px;color:var(--muted);margin-top:3px}.mgmt-cards{display:grid;grid-template-columns:repeat(4,minmax(120px,1fr));gap:10px;margin-bottom:12px}.mgmt-card{border:1px solid var(--line);border-radius:10px;padding:11px;background:#fff}.mgmt-card .num{font-size:22px;font-weight:800;margin-top:4px}.mgmt-card .lbl{font-size:10px;font-weight:800;color:var(--muted)}.mgmt-tablewrap{overflow:auto;max-height:390px}.mgmt-table{border-collapse:collapse;width:100%;font-size:11px}.mgmt-table th{position:sticky;top:0;background:#eef3f8;text-align:left;padding:8px;border-bottom:1px solid var(--line);white-space:nowrap}.mgmt-table td{padding:8px;border-bottom:1px solid #edf1f5;white-space:nowrap}.mgmt-table tr:hover{background:#f8fbff}.mgmt-empty{padding:24px;text-align:center;color:var(--muted);font-size:12px}
-@media(max-width:900px){.mgmt-cards{grid-template-columns:repeat(2,minmax(120px,1fr))}}
-.pager{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 14px;font-size:12px;color:var(--muted);flex-wrap:wrap}.pager-controls{display:flex;align-items:center;gap:4px;flex-wrap:wrap;justify-content:flex-end}.pager button{border:1px solid var(--line);background:#fff;border-radius:7px;padding:6px 9px;cursor:pointer;font-size:12px;min-width:32px}.pager button:hover{background:#f3f7fb}.pager button.active{background:var(--blue);color:#fff;border-color:var(--blue);font-weight:800}.pager button:disabled{opacity:.45;cursor:default}.status{font-size:12px;color:var(--muted);margin-left:auto}.modal{display:none;position:fixed;inset:0;background:#071a3355;align-items:center;justify-content:center;z-index:20}.modal.show{display:flex}.modalbox{background:#fff;border-radius:14px;padding:20px;width:min(620px,92vw);box-shadow:0 20px 60px #0003}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.formgrid label{font-size:11px;font-weight:700;color:var(--muted)}.formgrid input,.formgrid select{width:100%;height:38px;margin-top:5px;border:1px solid #cbd5e1;border-radius:7px;padding:0 9px}.actions{display:flex;justify-content:flex-end;gap:8px;margin-top:16px}.actions button{padding:9px 14px;border-radius:8px;border:1px solid var(--line);cursor:pointer}.actions .save{background:var(--blue);color:#fff;border-color:var(--blue)}
-@media(max-width:1000px){.layout{grid-template-columns:1fr}.side{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:none;height:auto;min-height:0}.kpis{grid-template-columns:repeat(3,1fr)}}@media(max-width:700px){.header{padding:16px}.meta{display:none}.wrap{padding:12px}.kpis{grid-template-columns:1fr 1fr}.side{display:flex}.filters input{min-width:100%}}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 285px;gap:16px}.tablecard{overflow:hidden}.tablewrap{overflow:auto;max-height:650px}.table{border-collapse:collapse;width:max-content;min-width:100%;font-size:11px;background:#fff}.table th{position:sticky;top:0;background:#eef3f8;color:#334155;text-align:left;padding:9px 8px;border-bottom:1px solid var(--line);white-space:nowrap;z-index:2}.table td{padding:6px 8px;border-bottom:1px solid #edf1f5;white-space:nowrap}.table tr:hover{background:#f8fbff}.attention-CRITICAL{color:#b42318;font-weight:800}.attention-HIGH{color:#b54708;font-weight:800}.attention-MEDIUM{color:#9a6700;font-weight:800}.attention-NORMAL{color:#078a58;font-weight:700}.editable{cursor:pointer}.editable:hover{background:#edf6ff}.side{display:flex;flex-direction:column;gap:16px}.chartbox{height:180px;display:flex;align-items:center;justify-content:center;position:relative}.donut{width:112px;height:112px;border-radius:50%;position:relative;background:conic-gradient(#078a58 0 61%,#d97706 61% 77%,#d92d20 77% 100%)}.donut:after{content:"";position:absolute;inset:24px;background:#fff;border-radius:50%}.legend{font-size:12px;display:grid;gap:7px}.legend span{display:flex;justify-content:space-between}.dot{width:9px;height:9px;border-radius:50%;display:inline-block;margin-right:7px}.detail h3{margin:0 0 10px;font-size:14px}.detail-grid{display:grid;grid-template-columns:100px 1fr;gap:7px;font-size:12px}.detail-grid b{color:var(--muted)}.pager{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;font-size:12px;color:var(--muted)}.pager button{border:1px solid var(--line);background:#fff;border-radius:7px;padding:7px 11px;cursor:pointer}.status{font-size:12px;color:var(--muted);margin-left:auto}.modal{display:none;position:fixed;inset:0;background:#071a3355;align-items:center;justify-content:center;z-index:20}.modal.show{display:flex}.modalbox{background:#fff;border-radius:14px;padding:20px;width:min(620px,92vw);box-shadow:0 20px 60px #0003}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.formgrid label{font-size:11px;font-weight:700;color:var(--muted)}.formgrid input,.formgrid select{width:100%;height:38px;margin-top:5px;border:1px solid #cbd5e1;border-radius:7px;padding:0 9px}.actions{display:flex;justify-content:flex-end;gap:8px;margin-top:16px}.actions button{padding:9px 14px;border-radius:8px;border:1px solid var(--line);cursor:pointer}.actions .save{background:var(--blue);color:#fff;border-color:var(--blue)}
+@media(max-width:1100px){.layout{grid-template-columns:1fr}.side{display:grid;grid-template-columns:1fr 1fr}.kpis{grid-template-columns:repeat(3,1fr)}}@media(max-width:700px){.header{padding:16px}.meta{display:none}.wrap{padding:12px}.kpis{grid-template-columns:1fr 1fr}.side{display:flex}.filters input{min-width:100%}}
+
+/* PMO portfolio extensions */
+.tabs{display:flex;gap:7px;padding:10px 24px;background:#fff;border-bottom:1px solid var(--line);overflow:auto;white-space:nowrap}
+.tabs button{height:36px;border:1px solid #cbd5e1;border-radius:8px;background:#fff;padding:0 13px;font-size:11px;font-weight:800;color:#334155;cursor:pointer}
+.tabs button.active{background:var(--navy);color:#fff;border-color:var(--navy)}
+.view{display:none}.view.active{display:block}
+.sheet-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;box-shadow:0 2px 8px #0b1b3309}
+.sheet-title{font-size:18px;font-weight:800;margin:0 0 4px}.sheet-sub{font-size:12px;color:var(--muted)}
+.mini-grid{display:grid;grid-template-columns:repeat(5,minmax(130px,1fr));gap:14px;margin:16px 0}
+.metric-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:15px}
+.metric-card .value{font-size:25px;font-weight:800;margin-top:6px}.metric-card .label{font-size:10px;color:var(--muted);font-weight:800;letter-spacing:.4px}
+.bar-chart{display:grid;gap:14px;margin-top:15px}.bar-row{display:grid;grid-template-columns:145px 1fr 75px;align-items:center;gap:10px;font-size:12px}.bars{height:26px;background:#eef2f6;border-radius:6px;overflow:hidden;position:relative}.bar-target{position:absolute;right:0;top:0;height:100%;background:#dbe3ec}.bar-actual{position:absolute;left:0;top:0;height:100%;background:var(--blue)}.bar-num{text-align:right;font-weight:800}
+.target-form{display:grid;grid-template-columns:repeat(5,minmax(130px,1fr));gap:12px;margin-top:15px}.target-form label{font-size:10px;color:var(--muted);font-weight:800}.target-form input{width:100%;height:38px;margin-top:5px;border:1px solid #cbd5e1;border-radius:7px;padding:0 9px}
+.sheet-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:15px}.sheet-actions button{height:36px;border:1px solid #cbd5e1;border-radius:8px;background:#fff;padding:0 13px;font-weight:700;cursor:pointer}.sheet-actions .primary{background:var(--blue);color:#fff;border-color:var(--blue)}
+.full-table{overflow:auto;max-height:650px}.full-table table{border-collapse:collapse;width:max-content;min-width:100%;font-size:11px}.full-table th{position:sticky;top:0;background:#eef3f8;padding:9px 8px;border-bottom:1px solid var(--line);white-space:nowrap;text-align:left;z-index:2}.full-table td{padding:8px;border-bottom:1px solid #edf1f5;white-space:nowrap}.full-table tr:hover{background:#f8fbff}
+.badge{display:inline-block;padding:4px 7px;border-radius:999px;font-size:9px;font-weight:800;white-space:nowrap}.b-red{background:#fee4e2;color:#b42318}.b-amber{background:#fff0d6;color:#b54708}.b-yellow{background:#fff7d6;color:#9a6700}.b-green{background:#dcfce7;color:#078a58}.b-blue{background:#e7f0ff;color:#1769e0}.b-gray{background:#edf2f7;color:#475467}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px}.control-list{display:grid;gap:10px;margin-top:14px}.control-item{display:flex;justify-content:space-between;padding:11px 12px;background:#f8fafc;border:1px solid #edf1f5;border-radius:8px;font-size:12px}.control-ok{font-weight:800;color:var(--green)}.control-warn{font-weight:800;color:var(--amber)}
+@media(max-width:1000px){.mini-grid{grid-template-columns:repeat(3,1fr)}.target-form{grid-template-columns:repeat(2,1fr)}.two-col{grid-template-columns:1fr}}
+@media(max-width:700px){.mini-grid{grid-template-columns:1fr 1fr}.target-form{grid-template-columns:1fr}.bar-row{grid-template-columns:100px 1fr 55px}}
+
+/* v4 layout balance */
+.layout{align-items:start}
+.tablecard{height:fit-content;align-self:start}
+.tablewrap{max-height:620px}
+.side{width:100%;align-self:start}
+.chartbox{height:145px}
+.detail{height:auto}
+.detail-grid{grid-template-columns:90px minmax(0,1fr);gap:6px}
+@media(max-width:1100px){
+  .layout{grid-template-columns:minmax(0,1fr) 260px}
+}
+@media(max-width:850px){
+  .layout{grid-template-columns:1fr}
+  .side{display:grid;grid-template-columns:1fr 1fr}
+  .detail{grid-column:1/-1}
+}
+
+
+.pmo-rag{font-weight:800;letter-spacing:.2px}
+.pmo-rag.red{color:#b42318}.pmo-rag.amber{color:#b54708}.pmo-rag.green{color:#078a58}
+
+
+/* v6: balanced 30-row tracker + executive PMO styling */
+.tablewrap{max-height:760px}
+.table{font-size:10.8px}
+.table th{padding:8px 8px}
+.table td{padding:6px 8px}
+.layout{grid-template-columns:minmax(0,1fr) 300px;align-items:start}
+.side{gap:14px}
+.chartbox{height:132px}
+.detail{max-height:520px;overflow:auto}
+.pmo-hero{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(220px,.7fr);gap:16px;align-items:stretch}
+.pmo-score{border:1px solid var(--line);border-radius:14px;background:linear-gradient(135deg,#f8fbff,#eef4fa);display:flex;align-items:center;justify-content:center;gap:18px;padding:18px}
+.pmo-ring{width:112px;height:112px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(#078a58 0deg,#078a58 270deg,#e6edf3 270deg 360deg);position:relative}
+.pmo-ring:after{content:"";position:absolute;inset:10px;border-radius:50%;background:#fff}
+.pmo-ring strong{position:relative;z-index:1;font-size:25px;color:#12263f}
+.pmo-score-copy .klabel{margin-bottom:4px}
+.pmo-score-copy h3{margin:0 0 4px;font-size:17px}
+.pmo-score-copy p{margin:0;color:var(--muted);font-size:11px;line-height:1.45}
+.pmo-alerts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pmo-alert{border:1px solid var(--line);border-radius:12px;padding:13px;background:#fff}
+.pmo-alert b{display:block;font-size:22px;margin-top:5px}
+.pmo-alert.red b{color:#b42318}.pmo-alert.amber b{color:#b54708}.pmo-alert.green b{color:#078a58}
+.pmo-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:16px}
+.pmo-check{display:flex;justify-content:space-between;align-items:center;padding:13px 14px;border:1px solid #e5ebf1;border-radius:10px;background:#fbfcfe;margin-bottom:9px}
+.pmo-check:last-child{margin-bottom:0}
+.pmo-check-title{font-weight:700;font-size:12px}
+.pmo-check-sub{font-size:10px;color:var(--muted);margin-top:3px}
+.pmo-state{font-size:10px;font-weight:900;padding:5px 8px;border-radius:999px}
+.pmo-state.ok{background:#dcfce7;color:#078a58}.pmo-state.warn{background:#fff0d6;color:#b54708}.pmo-state.bad{background:#fee4e2;color:#b42318}
+.pmo-workstream{display:grid;grid-template-columns:1fr auto;gap:10px;padding:12px 4px;border-bottom:1px solid #edf1f5;align-items:center}
+.pmo-workstream:last-child{border-bottom:0}
+.pmo-ws-name{font-weight:700;font-size:12px}.pmo-ws-desc{font-size:10px;color:var(--muted);margin-top:3px}
+.pmo-ws-dot{width:9px;height:9px;border-radius:50%;background:#078a58;box-shadow:0 0 0 4px #e4f7ed}
+.pmo-cadence{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.pmo-cadence .card{padding:14px}
+@media(max-width:950px){.pmo-hero,.pmo-grid{grid-template-columns:1fr}.pmo-cadence{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
 <header class="header"><div class="brand"><div class="tower">📡</div><div><div class="title">TELECOM PROJECT TRACKER</div><div class="sub">Project Control | Cloud Delivery Dashboard</div></div></div><div class="meta">CLOUD DATABASE: D1<br><span id="recordMeta">Loading records...</span></div></header>
-<main class="wrap">
+<nav class="tabs"><button id="tab-dashboard" class="active" onclick="switchView('dashboard')">DASHBOARD</button><button id="tab-performance" onclick="switchView('performance')">PERFORMANCE</button><button id="tab-target" onclick="switchView('target')">TARGET PLAN</button><button id="tab-attention" onclick="switchView('attention')">MANAGEMENT ATTENTION</button><button id="tab-actions" onclick="switchView('actions')">ACTION MANAGEMENT</button><button id="tab-pmo" onclick="switchView('pmo')">PMO CONTROL</button></nav>
+<main class="wrap view active" id="view-dashboard">
 <section class="kpis" id="kpis"></section>
 <div class="filters">
 <input id="search" placeholder="Search project, site, customer...">
@@ -39,83 +110,121 @@
 <span class="pill crit" id="critPill">Critical —</span><span class="pill high" id="highPill">High —</span><span class="status" id="status"></span>
 </div>
 <div class="layout">
-<section class="card tablecard"><div class="tablewrap"><table class="table"><thead><tr id="thead"></tr></thead><tbody id="tbody"></tbody></table></div><div class="pager"><span id="pageInfo"></span><div class="pager-controls" id="pagerControls"></div></div></section>
+<section class="card tablecard"><div class="tablewrap"><table class="table"><thead><tr id="thead"></tr></thead><tbody id="tbody"></tbody></table></div><div class="pager"><span id="pageInfo"></span><div><button onclick="page(-1)">‹</button> <button onclick="page(1)">›</button></div></div></section>
 <aside class="side">
 <section class="card"><div class="klabel">PO STATUS</div><div class="chartbox"><div class="donut" id="poDonut"></div></div><div class="legend" id="poLegend"></div></section>
 <section class="card"><div class="klabel">ATTENTION LEVEL</div><div class="chartbox"><div class="donut" id="attDonut"></div></div><div class="legend" id="attLegend"></div></section>
 <section class="card detail"><h3>SELECTED PROJECT</h3><div class="detail-grid" id="detail">Click a row to inspect project details.</div></section>
 </aside>
 </div>
+</main>
 
-<section class="card management">
-  <div class="management-head">
-    <div><div class="management-title">MANAGEMENT ATTENTION</div><div class="management-sub">Projects requiring follow-up based on current Attention Level.</div></div>
-    <span class="status" id="mgmtMeta"></span>
-  </div>
-  <div class="mgmt-cards" id="mgmtCards"></div>
-  <div class="mgmt-tablewrap">
-    <table class="mgmt-table">
-      <thead><tr><th>LEVEL</th><th>SITE ID</th><th>REGION</th><th>PO STATUS</th><th>TI STATUS</th><th>REASON</th><th>ACTION REQUIRED</th><th>OWNER</th><th>DUE DATE</th></tr></thead>
-      <tbody id="mgmtBody"></tbody>
-    </table>
+<section class="wrap view" id="view-performance">
+  <div class="sheet-card"><h2 class="sheet-title">Performance | Target vs Actual</h2><div class="sheet-sub">Management view comparing current tracker performance against the monthly target plan.</div></div>
+  <div class="mini-grid" id="perfMetrics"></div>
+  <div class="two-col">
+    <div class="sheet-card"><div class="klabel">TARGET VS ACTUAL</div><div class="bar-chart" id="targetActualChart"></div></div>
+    <div class="sheet-card"><div class="klabel">PERFORMANCE SUMMARY</div><div id="perfSummary" class="control-list"></div></div>
   </div>
 </section>
 
-</main>
+<section class="wrap view" id="view-target">
+  <div class="sheet-card"><h2 class="sheet-title">Target Plan</h2><div class="sheet-sub">Set monthly management targets. Targets are stored in this browser and do not modify project records.</div>
+    <div class="target-form">
+      <label>WORK PACKAGES<input id="tWork" type="number"></label>
+      <label>PO CLOSED<input id="tPO" type="number"></label>
+      <label>WCC CLOSED<input id="tWCC" type="number"></label>
+      <label>CRITICAL MAX<input id="tCritical" type="number"></label>
+      <label>OVERDUE MAX<input id="tOverdue" type="number"></label>
+    </div>
+    <div class="sheet-actions"><button onclick="resetTargets()">Reset Defaults</button><button class="primary" onclick="saveTargets()">Save Target Plan</button></div>
+  </div>
+</section>
+
+<section class="wrap view" id="view-attention">
+  <div class="sheet-card"><h2 class="sheet-title">Management Attention</h2><div class="sheet-sub">Critical, High and Medium items requiring management follow-up.</div></div>
+  <div class="mini-grid" id="attentionMetrics"></div>
+  <div class="sheet-card"><div class="full-table"><table><thead><tr id="attentionHead"></tr></thead><tbody id="attentionBody"></tbody></table></div></div>
+</section>
+
+<section class="wrap view" id="view-actions">
+  <div class="sheet-card"><h2 class="sheet-title">Action Management</h2><div class="sheet-sub">Complete 25-column project control view for action tracking and follow-up.</div></div>
+  <div class="mini-grid" id="actionMetrics"></div>
+  <div class="sheet-card">
+    <div class="filters" style="margin:0 0 12px"><input id="amSearch" placeholder="Search project, site, action..."><select id="amOwner"><option value="">All Action Owner</option></select><select id="amStatus"><option value="">All Action Status</option><option>OPEN</option><option>IN PROGRESS</option><option>DONE</option></select><select id="amFollow"><option value="">All Follow-up</option><option>OVERDUE</option><option>DUE SOON</option><option>ON TRACK</option><option>COMPLETED</option></select><button class="apply" onclick="renderActions()">Apply</button><button onclick="resetActions()">Reset</button></div>
+    <div class="full-table"><table><thead><tr id="actionHead"></tr></thead><tbody id="actionBody"></tbody></table></div>
+  </div>
+</section>
+
+<section class="wrap view" id="view-pmo">
+  <div class="sheet-card">
+    <div class="pmo-hero">
+      <div>
+        <div class="klabel">PROJECT MANAGEMENT OFFICE</div>
+        <h2 class="sheet-title" style="margin-top:7px">PMO Control Center</h2>
+        <div class="sheet-sub">Executive control view for delivery health, governance, action ownership and management follow-up.</div>
+        <div class="pmo-cadence" style="margin-top:18px">
+          <div class="card"><div class="klabel">REPORTING</div><b>WEEKLY</b><div class="action-note">Management status cycle</div></div>
+          <div class="card"><div class="klabel">CONTROL MODEL</div><b>RAG</b><div class="action-note">Risk & attention visibility</div></div>
+          <div class="card"><div class="klabel">SOURCE</div><b>D1 LIVE</b><div class="action-note">320 project records</div></div>
+        </div>
+      </div>
+      <div class="pmo-score">
+        <div class="pmo-ring" id="pmoRing"><strong id="pmoScore">—</strong></div>
+        <div class="pmo-score-copy">
+          <div class="klabel">CONTROL HEALTH</div>
+          <h3 id="pmoHealthLabel">Calculating</h3>
+          <p id="pmoHealthText">Based on ownership, target-date coverage and active management attention.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mini-grid" id="pmoMetrics"></div>
+
+  <div class="pmo-alerts" style="margin-bottom:16px">
+    <div class="pmo-alert red"><div class="klabel">CRITICAL</div><b id="pmoCritical">—</b><div class="action-note">Immediate management attention</div></div>
+    <div class="pmo-alert amber"><div class="klabel">HIGH + MEDIUM</div><b id="pmoActive">—</b><div class="action-note">Active control queue</div></div>
+    <div class="pmo-alert red"><div class="klabel">OVERDUE ACTION</div><b id="pmoOverdue">—</b><div class="action-note">Follow-up required</div></div>
+    <div class="pmo-alert green"><div class="klabel">TARGET COVERAGE</div><b id="pmoCoverage">—</b><div class="action-note">Actions with target dates</div></div>
+  </div>
+
+  <div class="pmo-grid">
+    <div class="sheet-card">
+      <div class="klabel">CONTROL CHECKS</div>
+      <div id="controlChecks" style="margin-top:12px"></div>
+    </div>
+    <div class="sheet-card">
+      <div class="klabel">PMO WORKSTREAMS</div>
+      <div style="margin-top:8px">
+        <div class="pmo-workstream"><div><div class="pmo-ws-name">Project Tracking</div><div class="pmo-ws-desc">Scope, status and delivery visibility</div></div><i class="pmo-ws-dot"></i></div>
+        <div class="pmo-workstream"><div><div class="pmo-ws-name">Commercial Control</div><div class="pmo-ws-desc">PO and commercial follow-up</div></div><i class="pmo-ws-dot"></i></div>
+        <div class="pmo-workstream"><div><div class="pmo-ws-name">Technical / Site Control</div><div class="pmo-ws-desc">Readiness and access issues</div></div><i class="pmo-ws-dot"></i></div>
+        <div class="pmo-workstream"><div><div class="pmo-ws-name">Action & Follow-up</div><div class="pmo-ws-desc">Owner, deadline and escalation</div></div><i class="pmo-ws-dot"></i></div>
+        <div class="pmo-workstream"><div><div class="pmo-ws-name">Target vs Actual</div><div class="pmo-ws-desc">Plan versus delivery performance</div></div><i class="pmo-ws-dot"></i></div>
+        <div class="pmo-workstream"><div><div class="pmo-ws-name">Management Reporting</div><div class="pmo-ws-desc">Executive-ready status reporting</div></div><i class="pmo-ws-dot"></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <div class="modal" id="modal"><div class="modalbox"><h3>Edit Project</h3><div class="formgrid" id="form"></div><div class="actions"><button onclick="closeModal()">Cancel</button><button class="save" onclick="saveEdit()">Save Changes</button></div></div></div>
 <script>
 const cols=[
-["id","No"],["customer","CUSTOMER"],["project","PROJECT"],["region","REGION"],["province","PROVINCE"],["site_id","SITE ID"],["new_xl_id","NEW XL ID"],["sow","SOW"],["scope","SCOPE"],["po_status","PO STATUS"],["ti_status","TI STATUS"],["payment_status","PAYMENT STATUS"],["wcc_status","WCC STATUS"],["attention_reason","ATTENTION REASON"],["attention_level","ATTENTION LEVEL"],["action_required","ACTION REQUIRED"],["action_owner","ACTION OWNER"],["last_update","LAST UPDATE"],["action_due_date","ACTION DUE DATE"],["action_status","ACTION STATUS"],["days_to_due","DAYS TO DUE"],["follow_up_flag","FOLLOW-UP FLAG"],["report_flag","REPORT FLAG"]
-];
+["id","No"],["customer","CUSTOMER"],["project","PROJECT"],["region","REGION"],["province","PROVINCE"],["site_id","SITE ID"],["new_xl_id","NEW XL ID"],["sow","SOW"],["scope","SCOPE"],["po_status","PO STATUS"],["ti_status","TI STATUS"],["payment_status","PAYMENT STATUS"],["wcc_status","WCC STATUS"],["attention_reason","ATTENTION REASON"],["attention_level","ATTENTION LEVEL"],["action_required","ACTION REQUIRED"],["action_owner","ACTION OWNER"],["last_update","LAST UPDATE"],["target_date","TARGET DATE"],["target_status","TARGET STATUS"],["action_due_date","ACTION DUE DATE"],["action_status","ACTION STATUS"],["days_to_due","DAYS TO DUE"],["follow_up_flag","FOLLOW-UP FLAG"],["report_flag","REPORT FLAG"],["rag_status","RAG STATUS"],["milestone","MILESTONE"],["dependency","DEPENDENCY"],["risk_issue","RISK / ISSUE"],["next_step","NEXT STEP"]
+]
 const editable=["customer","project","region","province","site_id","new_xl_id","sow","scope","po_status","ti_status","payment_status","wcc_status","last_update","action_due_date","action_status"];
 const selectValues={
 po_status:["PO CLOSED","PO OPEN","PO OUTSTANDING","PO PARTIAL OPEN"],
 ti_status:["ATP Approved","04. ON AIR","04.NotStart","05. MOS DONE","Block Access"],
 action_status:["OPEN","IN PROGRESS","DONE",""]
 };
-let all=[], filtered=[], current=0, selected=null, editing=null, pageSize=25;
+let all=[], filtered=[], current=0, selected=null, editing=null, pageSize=30;
 function esc(x){return String(x??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]))}
 async function load(){
   const p=new URLSearchParams(); for(const id of ["search","region","sow","po","attention"]){const v=document.getElementById(id).value;if(v)p.set(id,v)}
   const r=await fetch("/api/projects?"+p); const d=await r.json(); all=d.rows||[]; filtered=all; current=0;
-  render(); document.getElementById("status").textContent=`${all.length} records`;
-}
-function statusBadge(key,v){
-  const s=String(v??"");
-  if(!s)return "";
-  let cls="badge-gray";
-  if(key==="attention_level"){
-    if(s==="CRITICAL")cls="badge-red";
-    else if(s==="HIGH")cls="badge-amber";
-    else if(s==="MEDIUM")cls="badge-blue";
-    else if(s==="NORMAL")cls="badge-green";
-  }else if(key==="po_status"){
-    if(s==="PO CLOSED")cls="badge-green";
-    else if(s==="PO OUTSTANDING")cls="badge-red";
-    else if(s==="PO OPEN")cls="badge-amber";
-    else if(s==="PO PARTIAL OPEN")cls="badge-blue";
-  }else if(key==="action_status"){
-    if(s==="DONE")cls="badge-green";
-    else if(s==="IN PROGRESS")cls="badge-blue";
-    else if(s==="OPEN")cls="badge-amber";
-  }else if(key==="ti_status"){
-    if(s.toUpperCase().includes("BLOCK"))cls="badge-red";
-    else if(s.toUpperCase().includes("NOTSTART"))cls="badge-amber";
-    else if(s==="ATP Approved"||s==="04. ON AIR")cls="badge-green";
-  }
-  return `<span class="badge ${cls}">${esc(s)}</span>`;
-}
-function isOverdue(r){
-  const d=Number(r.days_to_due);
-  return r.action_status!=="DONE" && Number.isFinite(d) && d<0;
-}
-function dueBadge(r){
-  if(!r.action_due_date)return esc(r.action_due_date);
-  const d=Number(r.days_to_due);
-  if(r.action_status==="DONE")return `<span class="badge badge-green">${esc(r.action_due_date)}</span>`;
-  if(Number.isFinite(d) && d<0)return `<span class="badge overdue">${esc(r.action_due_date)} · ${Math.abs(d)}d overdue</span>`;
-  if(Number.isFinite(d) && d<=3)return `<span class="badge due-soon">${esc(r.action_due_date)} · ${d}d</span>`;
-  return esc(r.action_due_date);
+  render(); renderPMO(); document.getElementById("status").textContent=`${all.length} records`;
 }
 function render(){
   const total=all.length, closed=all.filter(x=>x.po_status==="PO CLOSED").length, outstanding=all.filter(x=>x.po_status==="PO OUTSTANDING").length;
@@ -126,46 +235,39 @@ function render(){
     ["PO CLOSED",closed,(total?((closed/total)*100).toFixed(1):0)+"%"],
     ["PO OUTSTANDING",outstanding,(total?((outstanding/total)*100).toFixed(1):0)+"%"],
     ["CRITICAL",critical,(total?((critical/total)*100).toFixed(1):0)+"%"],
-    ["OVERDUE ACTION",all.filter(isOverdue).length,(total?((all.filter(isOverdue).length/total)*100).toFixed(1):0)+"%"]
+    ["OVERDUE ACTION",all.filter(r=>derivedFollow(r)==="OVERDUE").length,(total?((all.filter(r=>derivedFollow(r)==="OVERDUE").length/total)*100).toFixed(1):0)+"%"]
   ].map(x=>`<div class="card"><div class="klabel">${x[0]}</div><div class="kvalue">${x[1]}</div><div class="kpct">${x[2]}</div></div>`).join("");
   document.getElementById("critPill").textContent=`Critical ${critical}`;document.getElementById("highPill").textContent=`High ${high}`;
-  document.getElementById("thead").innerHTML=cols.map(c=>`<th>${c[1]}</th>`).join("");
-  const attentionRows=all.filter(r=>["CRITICAL","HIGH","MEDIUM"].includes(r.attention_level));
-  const mgmtCounts=["CRITICAL","HIGH","MEDIUM"].map(level=>[level,attentionRows.filter(r=>r.attention_level===level).length]);
-  document.getElementById("mgmtCards").innerHTML=[
-    ["CRITICAL",mgmtCounts[0][1],"badge-red"],["HIGH",mgmtCounts[1][1],"badge-amber"],["MEDIUM",mgmtCounts[2][1],"badge-blue"],["TOTAL",attentionRows.length,"badge-gray"]
-  ].map(x=>`<div class="mgmt-card"><div class="lbl"><span class="badge ${x[2]}">${x[0]}</span></div><div class="num">${x[1]}</div></div>`).join("");
-  document.getElementById("mgmtMeta").textContent=`Showing ${attentionRows.length} attention item${attentionRows.length===1?"":"s"}`;
-  document.getElementById("mgmtBody").innerHTML=attentionRows.length?attentionRows.map(r=>`<tr onclick="selectRow(${r.id})">
-    <td>${statusBadge("attention_level",r.attention_level)}</td>
-    <td>${esc(r.site_id)}</td><td>${esc(r.region)}</td>
-    <td>${statusBadge("po_status",r.po_status)}</td><td>${statusBadge("ti_status",r.ti_status)}</td>
-    <td>${esc(r.attention_reason)}</td><td>${esc(r.action_required)}</td><td>${esc(r.action_owner)}</td>
-    <td>${dueBadge(r)}</td>
-  </tr>`).join(""):`<tr><td colspan="9" class="mgmt-empty">No Critical, High, or Medium items in the current filter.</td></tr>`;
-
   const start=current*pageSize, pageRows=all.slice(start,start+pageSize);
-  document.getElementById("tbody").innerHTML=pageRows.map(r=>{
-    const rowClass=r.attention_level==="CRITICAL"?"row-critical":r.attention_level==="HIGH"?"row-high":"";
-    return `<tr class="${rowClass}" onclick="selectRow(${r.id})">${cols.map(c=>{
-      const k=c[0],v=r[k]; let cls="";
-      if(k==="attention_level")cls="attention-"+(v||"NORMAL");
-      if(editable.includes(k))cls+=" editable";
-      let content=esc(v);
-      if(["po_status","ti_status","attention_level","action_status"].includes(k)) content=statusBadge(k,v);
-      if(k==="action_due_date") content=dueBadge(r);
-      if(k==="days_to_due" && isOverdue(r)) content=`<span class="badge overdue">${esc(v)}</span>`;
-      return `<td class="${cls}" ondblclick="event.stopPropagation();openEdit(${r.id},'${k}')">${content}</td>`;
-    }).join("")}</tr>`;
-  }).join("");
-  document.getElementById("pageInfo").textContent=total?`Showing ${start+1} - ${Math.min(start+pageSize,total)} of ${total}`:"Showing 0 - 0 of 0";
-  renderPager(total);
+  document.getElementById("thead").innerHTML=cols.map(c=>`<th>${c[1]}</th>`).join("");
+  document.getElementById("tbody").innerHTML=pageRows.map(r=>`<tr onclick="selectRow(${r.id})">${cols.map(([k])=>{
+    let v=r[k], content="";
+    if(k==="target_date"||k==="action_due_date") content=dateCell(r);
+    else if(k==="target_status"||k==="action_status") content=badge(derivedStatus(r));
+    else if(k==="days_to_due"){const d=dueDays(r);content=Number.isFinite(d)?(d<0?`<span class="badge b-red">${d}</span>`:d<=3?`<span class="badge b-yellow">${d}</span>`:d):"—"}
+    else if(k==="follow_up_flag") content=badge(derivedFollow(r));
+    else if(k==="attention_level") content=badge(r[k]||"NORMAL");
+    else if(k==="rag_status"){
+      const rv=r.attention_level==="CRITICAL"?"RED":(r.attention_level==="HIGH"||r.attention_level==="MEDIUM")?"AMBER":"GREEN";
+      content=`<span class="pmo-rag ${rv.toLowerCase()}">${rv}</span>`;
+    }
+    else if(k==="milestone") content=esc(r.wcc_status||"—");
+    else if(k==="dependency") content=esc(r.attention_level==="CRITICAL"?"Site Access":(r.po_status==="PO OUTSTANDING"?"PO Release":r.ti_status==="04.NotStart"?"Site Readiness":"—"));
+    else if(k==="risk_issue") content=esc(r.attention_reason||"—");
+    else if(k==="next_step") content=esc(r.action_required||"—");
+    else content=esc(v);
+    let cls="";
+    if(k==="attention_level")cls="attention-"+(v||"NORMAL");
+    if(editable.includes(k))cls+=" editable";
+    return `<td class="${cls}" ondblclick="event.stopPropagation();openEdit(${r.id},'${k}')">${content}</td>`;
+  }).join("")}</tr>`).join("");
+  document.getElementById("pageInfo").textContent=`Showing ${Math.min(start+1,total)} - ${Math.min(start+pageSize,total)} of ${total}`;
   updateCharts(all); if(selected) showDetail(selected.id);
 }
 function selectRow(id){selected=all.find(x=>x.id===id);showDetail(id)}
 function showDetail(id){const r=all.find(x=>x.id===id);if(!r)return;selected=r;document.getElementById("detail").innerHTML=[
-["Customer",r.customer],["Project",r.project],["Site ID",r.site_id],["Region",r.region],["SOW",r.sow],["PO Status",r.po_status],["TI Status",r.ti_status],["Attention",statusBadge("attention_level",r.attention_level)],["Action",r.action_required],["Owner",r.action_owner],["Action Status",statusBadge("action_status",r.action_status)],["Due Date",dueBadge(r)],["Last Update",r.last_update]
-].map(x=>`<b>${x[0]}</b><span>${String(x[1]??"")}</span>`).join("")}
+["Customer",r.customer],["Project",r.project],["Site ID",r.site_id],["Region",r.region],["SOW",r.sow],["PO Status",r.po_status],["TI Status",r.ti_status],["Attention",r.attention_level],["Action",r.action_required],["Owner",r.action_owner],["Target Date",effectiveDate(r)],["Target Status",derivedStatus(r)],["Days to Due",Number.isFinite(dueDays(r))?dueDays(r):"—"],["Follow-up",derivedFollow(r)],["Last Update",r.last_update]
+].map(x=>`<b>${x[0]}</b><span>${esc(x[1])}</span>`).join("")}
 function updateCharts(rs){
  const po={};rs.forEach(r=>po[r.po_status]=(po[r.po_status]||0)+1);
  const at={};rs.forEach(r=>at[r.attention_level]=(at[r.attention_level]||0)+1);
@@ -173,28 +275,6 @@ function updateCharts(rs){
 }
 function renderLegend(id,obj){document.getElementById(id).innerHTML=Object.entries(obj).map(([k,v])=>`<span><span><i class="dot"></i>${esc(k)}</span><b>${v}</b></span>`).join("")}
 function page(n){const max=Math.max(0,Math.ceil(all.length/pageSize)-1);current=Math.max(0,Math.min(max,current+n));render()}
-function goToPage(n){const max=Math.max(0,Math.ceil(all.length/pageSize)-1);current=Math.max(0,Math.min(max,n));render()}
-function renderPager(total){
-  const el=document.getElementById("pagerControls");
-  const pages=Math.max(1,Math.ceil(total/pageSize));
-  const cur=current+1;
-  let items="";
-  items+=`<button onclick="goToPage(0)" ${cur===1?"disabled":""}>«</button>`;
-  items+=`<button onclick="page(-1)" ${cur===1?"disabled":""}>‹</button>`;
-  if(pages<=18){
-    for(let i=1;i<=pages;i++) items+=`<button class="${i===cur?"active":""}" onclick="goToPage(${i-1})">${i}</button>`;
-  }else{
-    items+=`<button class="${cur===1?"active":""}" onclick="goToPage(0)">1</button>`;
-    const lo=Math.max(2,cur-2), hi=Math.min(pages-1,cur+2);
-    if(lo>2) items+="<span>…</span>";
-    for(let i=lo;i<=hi;i++) items+=`<button class="${i===cur?"active":""}" onclick="goToPage(${i-1})">${i}</button>`;
-    if(hi<pages-1) items+="<span>…</span>";
-    items+=`<button class="${cur===pages?"active":""}" onclick="goToPage(${pages-1})">${pages}</button>`;
-  }
-  items+=`<button onclick="page(1)" ${cur===pages?"disabled":""}>›</button>`;
-  items+=`<button onclick="goToPage(${pages-1})" ${cur===pages?"disabled":""}>»</button>`;
-  el.innerHTML=items;
-}
 function resetFilters(){["search","region","sow","po","attention"].forEach(id=>document.getElementById(id).value="");load()}
 async function fillFilters(){
  const r=await fetch("/api/projects");const d=await r.json();const rs=d.rows||[];
@@ -214,6 +294,74 @@ async function saveEdit(){
  const res=await fetch("/api/projects/"+editing.id,{method:"PATCH",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)});
  if(!res.ok){alert("Save failed");return}
  const d=await res.json();const i=all.findIndex(x=>x.id===editing.id);if(i>=0)all[i]=d.row;closeModal();render();showDetail(editing.id);
+}
+
+function effectiveDate(r){return r.action_due_date||r.last_update||""}
+function parseDateValue(s){const x=String(s||"").trim();const m=x.match(/^(\d{1,2})-([A-Za-z]{3})-(\d{2}|\d{4})$/);if(m){const mo={Jan:0,Feb:1,Mar:2,Apr:3,May:4,Jun:5,Jul:6,Aug:7,Sep:8,Oct:9,Nov:10,Dec:11};let y=+m[3];if(y<100)y+=2000;return new Date(y,mo[m[2]],+m[1])}const d=new Date(x);return Number.isNaN(d.getTime())?null:d}
+function dueDays(r){const d=parseDateValue(effectiveDate(r));if(!d)return NaN;d.setHours(0,0,0,0);const t=new Date();t.setHours(0,0,0,0);return Math.round((d-t)/86400000)}
+function derivedStatus(r){const s=String(r.action_status||"").toUpperCase();return s==="DONE"?"DONE":s==="IN PROGRESS"?"IN PROGRESS":"OPEN"}
+function derivedFollow(r){const s=derivedStatus(r),d=dueDays(r);if(s==="DONE")return"COMPLETED";if(Number.isFinite(d)&&d<0)return"OVERDUE";if(Number.isFinite(d)&&d<=3)return"DUE SOON";return"ON TRACK"}
+function badge(v){const c=v==="CRITICAL"?"b-red":v==="HIGH"?"b-amber":v==="MEDIUM"?"b-yellow":v==="DONE"||v==="COMPLETED"?"b-green":v==="IN PROGRESS"?"b-blue":v==="OVERDUE"?"b-red":v==="DUE SOON"?"b-yellow":"b-gray";return'<span class="badge '+c+'">'+esc(v||"—")+'</span>'}
+function dateCell(r){const d=effectiveDate(r),n=dueDays(r),s=derivedStatus(r);if(!d)return badge("NO DATE");if(s==="DONE")return badge(d);if(Number.isFinite(n)&&n<0)return'<span class="badge b-red">'+esc(d)+' · '+Math.abs(n)+'d overdue</span>';if(Number.isFinite(n)&&n<=3)return'<span class="badge b-yellow">'+esc(d)+' · '+n+'d</span>';return esc(d)}
+function switchView(v){document.querySelectorAll(".view").forEach(x=>x.classList.remove("active"));document.getElementById("view-"+v).classList.add("active");document.querySelectorAll(".tabs button").forEach(x=>x.classList.remove("active"));document.getElementById("tab-"+v).classList.add("active");if(v==="performance")renderPerformance();if(v==="target")loadTargets();if(v==="attention")renderAttention();if(v==="actions"){initActionOwners();renderActions()}if(v==="pmo")renderPMO()}
+const targetDefaults={work:320,po:220,wcc:150,critical:5,overdue:0}
+function getTargets(){try{return {...targetDefaults,...JSON.parse(localStorage.getItem("tt_targets")||"{}")}}catch(e){return {...targetDefaults}}}
+function loadTargets(){const t=getTargets();tWork.value=t.work;tPO.value=t.po;tWCC.value=t.wcc;tCritical.value=t.critical;tOverdue.value=t.overdue}
+function saveTargets(){localStorage.setItem("tt_targets",JSON.stringify({work:+tWork.value,po:+tPO.value,wcc:+tWCC.value,critical:+tCritical.value,overdue:+tOverdue.value}));renderPerformance();alert("Target plan saved")}
+function resetTargets(){localStorage.removeItem("tt_targets");loadTargets();renderPerformance()}
+function actuals(){const total=all.length,po=all.filter(r=>r.po_status==="PO CLOSED").length,wcc=all.filter(r=>r.wcc_status==="WCC CLOSED").length,critical=all.filter(r=>r.attention_level==="CRITICAL").length,overdue=all.filter(r=>derivedFollow(r)==="OVERDUE").length;return{total,po,wcc,critical,overdue}}
+function renderPerformance(){const a=actuals(),t=getTargets();perfMetrics.innerHTML=[["WORK PACKAGES",a.total,t.work],["PO CLOSED",a.po,t.po],["WCC CLOSED",a.wcc,t.wcc],["CRITICAL",a.critical,t.critical],["OVERDUE ACTION",a.overdue,t.overdue]].map(x=>'<div class="metric-card"><div class="label">'+x[0]+'</div><div class="value">'+x[1]+'</div><div class="kpct">Target: '+x[2]+'</div></div>').join("");const items=[["Work Packages",a.total,t.work],["PO Closed",a.po,t.po],["WCC Closed",a.wcc,t.wcc],["Critical",a.critical,t.critical],["Overdue",a.overdue,t.overdue]];const max=Math.max(...items.map(x=>Math.max(x[1],x[2],1)));targetActualChart.innerHTML=items.map(x=>'<div class="bar-row"><b>'+x[0]+'</b><div class="bars"><div class="bar-target" style="width:'+(x[2]/max*100)+'%"></div><div class="bar-actual" style="width:'+(x[1]/max*100)+'%"></div></div><div class="bar-num">'+x[1]+' / '+x[2]+'</div></div>').join("");perfSummary.innerHTML=items.map(x=>{const higherIsGood=x[0]!=="Critical"&&x[0]!=="Overdue";const ok=higherIsGood?x[1]>=x[2]:x[1]<=x[2];return'<div class="control-item"><span>'+x[0]+'</span><b class="'+(ok?"control-ok":"control-warn")+'">'+(ok?"WITHIN TARGET":"REVIEW")+'</b></div>'}).join("")}
+const attentionCols=[["id","No"],["project","PROJECT"],["region","REGION"],["province","PROVINCE"],["site_id","SITE ID"],["sow","SOW"],["po_status","PO STATUS"],["ti_status","TI STATUS"],["attention_reason","ATTENTION REASON"],["attention_level","ATTENTION LEVEL"],["action_required","ACTION REQUIRED"],["action_owner","ACTION OWNER"],["target_date","TARGET DATE"],["target_status","TARGET STATUS"],["days_to_due","DAYS TO DUE"],["follow_up_flag","FOLLOW-UP FLAG"]]
+function renderAttention(){const rs=all.filter(r=>["CRITICAL","HIGH","MEDIUM"].includes(r.attention_level));attentionMetrics.innerHTML=[["CRITICAL",rs.filter(r=>r.attention_level==="CRITICAL").length],["HIGH",rs.filter(r=>r.attention_level==="HIGH").length],["MEDIUM",rs.filter(r=>r.attention_level==="MEDIUM").length],["OVERDUE",rs.filter(r=>derivedFollow(r)==="OVERDUE").length],["DUE SOON",rs.filter(r=>derivedFollow(r)==="DUE SOON").length]].map(x=>'<div class="metric-card"><div class="label">'+x[0]+'</div><div class="value">'+x[1]+'</div></div>').join("");attentionHead.innerHTML=attentionCols.map(c=>'<th>'+c[1]+'</th>').join("");attentionBody.innerHTML=rs.map(r=>'<tr>'+attentionCols.map(([k])=>{if(k==="target_date"||k==="target_status"||k==="days_to_due"||k==="follow_up_flag")return'<td>'+(k==="target_date"?dateCell(r):k==="target_status"?badge(derivedStatus(r)):k==="days_to_due"?(Number.isFinite(dueDays(r))?dueDays(r):"—"):badge(derivedFollow(r)))+'</td>';if(k==="attention_level")return'<td>'+badge(r[k])+'</td>';return'<td>'+esc(r[k]??"")+'</td>'}).join("")+'</tr>').join("")}
+function initActionOwners(){const vals=[...new Set(all.map(r=>r.action_owner).filter(Boolean))].sort();amOwner.innerHTML='<option value="">All Action Owner</option>'+vals.map(v=>'<option>'+esc(v)+'</option>').join("")}
+function resetActions(){["amSearch","amOwner","amStatus","amFollow"].forEach(id=>document.getElementById(id).value="");renderActions()}
+const actionCols=[["id","No"],["customer","CUSTOMER"],["project","PROJECT"],["region","REGION"],["province","PROVINCE"],["site_id","SITE ID"],["new_xl_id","NEW XL ID"],["sow","SOW"],["scope","SCOPE"],["po_status","PO STATUS"],["ti_status","TI STATUS"],["payment_status","PAYMENT STATUS"],["wcc_status","WCC STATUS"],["attention_reason","ATTENTION REASON"],["attention_level","ATTENTION LEVEL"],["action_required","ACTION REQUIRED"],["action_owner","ACTION OWNER"],["last_update","LAST UPDATE"],["target_date","TARGET DATE"],["target_status","TARGET STATUS"],["action_due_date","ACTION DUE DATE"],["action_status","ACTION STATUS"],["days_to_due","DAYS TO DUE"],["follow_up_flag","FOLLOW-UP FLAG"],["report_flag","REPORT FLAG"]]
+function renderActions(){const q=amSearch.value.toLowerCase().trim(),o=amOwner.value,s=amStatus.value,f=amFollow.value;const base=all.filter(r=>r.action_required||r.attention_level!=="NORMAL");const rs=base.filter(r=>{const hay=[r.customer,r.project,r.region,r.province,r.site_id,r.new_xl_id,r.sow,r.scope,r.action_required,r.action_owner].join(" ").toLowerCase();return(!q||hay.includes(q))&&(!o||r.action_owner===o)&&(!s||derivedStatus(r)===s)&&(!f||derivedFollow(r)===f)});const open=base.filter(r=>derivedStatus(r)==="OPEN").length,prog=base.filter(r=>derivedStatus(r)==="IN PROGRESS").length,over=base.filter(r=>derivedFollow(r)==="OVERDUE").length,done=base.filter(r=>derivedStatus(r)==="DONE").length;actionMetrics.innerHTML=[["TOTAL ACTIONS",base.length],["OPEN",open],["IN PROGRESS",prog],["OVERDUE",over],["DONE",done]].map(x=>'<div class="metric-card"><div class="label">'+x[0]+'</div><div class="value">'+x[1]+'</div></div>').join("");actionHead.innerHTML=actionCols.map(c=>'<th>'+c[1]+'</th>').join("");actionBody.innerHTML=rs.map(r=>'<tr>'+actionCols.map(([k])=>{if(k==="target_date"||k==="action_due_date")return'<td>'+dateCell(r)+'</td>';if(k==="target_status"||k==="action_status")return'<td>'+badge(derivedStatus(r))+'</td>';if(k==="days_to_due")return'<td>'+ (Number.isFinite(dueDays(r))?(dueDays(r)<0?'<span class="badge b-red">'+dueDays(r)+'</span>':dueDays(r)<=3?'<span class="badge b-yellow">'+dueDays(r)+'</span>':dueDays(r)):"—")+'</td>';if(k==="follow_up_flag")return'<td>'+badge(derivedFollow(r))+'</td>';if(k==="attention_level")return'<td>'+badge(r[k])+'</td>';return'<td>'+esc(r[k]??"")+'</td>'}).join("")+'</tr>').join("")||'<tr><td colspan="25" style="text-align:center;padding:30px;color:#667085">No records match the filters.</td></tr>'}
+function renderPMO(){const a=actuals();const actionCount=all.filter(r=>r.action_required).length;const completeData=all.filter(r=>r.customer&&r.project&&r.site_id&&r.region&&r.sow).length;const target=getTargets();pmoMetrics.innerHTML=[["PROJECT RECORDS",a.total],["ACTIVE ATTENTION",all.filter(r=>r.attention_level!=="NORMAL").length],["ACTION RECORDS",actionCount],["OVERDUE",a.overdue],["DATA COMPLETENESS",Math.round(completeData/a.total*100)+"%"]].map(x=>'<div class="metric-card"><div class="label">'+x[0]+'</div><div class="value">'+x[1]+'</div></div>').join("");const checks=[["Tracker coverage",a.total===target.work,"All work packages represented against plan"],["Action ownership",all.filter(r=>r.action_required&&!r.action_owner).length===0,"Actions should have an assigned owner"],["Target dates",all.filter(r=>r.action_required&&!effectiveDate(r)).length===0,"Active actions should have a target date"],["Management attention",all.filter(r=>["CRITICAL","HIGH","MEDIUM"].includes(r.attention_level)).length>0,"Attention queue is available for review"],["Target vs Actual","Target plan loaded","Performance control is enabled"]];controlChecks.innerHTML=checks.map(x=>'<div class="control-item"><span>'+x[0]+'<small style="display:block;color:var(--muted);margin-top:3px">'+x[2]+'</small></span><b class="'+(x[1]?"control-ok":"control-warn")+'">'+(x[1]?"OK":"REVIEW")+'</b></div>').join("")}
+
+function renderPMO(){
+  const total=all.length;
+  const active=all.filter(r=>r.attention_level&&r.attention_level!=="NORMAL").length;
+  const critical=all.filter(r=>r.attention_level==="CRITICAL").length;
+  const overdue=all.filter(r=>derivedFollow(r)==="OVERDUE").length;
+  const actions=all.filter(r=>r.action_required||r.attention_level!=="NORMAL");
+  const owned=actions.filter(r=>String(r.action_owner||"").trim()).length;
+  const dated=actions.filter(r=>String(effectiveDate(r)||"").trim()).length;
+  const coverage=actions.length?Math.round(dated/actions.length*100):100;
+  const ownership=actions.length?Math.round(owned/actions.length*100):100;
+  const attentionHealth=total?Math.max(0,Math.round((1-active/total)*100)):100;
+  const score=Math.round((coverage+ownership+attentionHealth)/3);
+
+  document.getElementById("pmoMetrics").innerHTML=[
+    ["PROJECT RECORDS",total,"Live tracker population"],
+    ["ACTIVE ATTENTION",active,"CRITICAL / HIGH / MEDIUM"],
+    ["ACTION RECORDS",actions.length,"Items requiring control"],
+    ["OVERDUE",overdue,"Follow-up required"],
+    ["TARGET COVERAGE",coverage+"%","Action date coverage"]
+  ].map(x=>`<div class="card"><div class="klabel">${x[0]}</div><div class="kvalue">${x[1]}</div><div class="kpct">${x[2]}</div></div>`).join("");
+
+  document.getElementById("pmoCritical").textContent=critical;
+  document.getElementById("pmoActive").textContent=all.filter(r=>r.attention_level==="HIGH"||r.attention_level==="MEDIUM").length;
+  document.getElementById("pmoOverdue").textContent=overdue;
+  document.getElementById("pmoCoverage").textContent=coverage+"%";
+  document.getElementById("pmoScore").textContent=score;
+  document.getElementById("pmoHealthLabel").textContent=score>=90?"CONTROLLED":score>=75?"WATCH":"ACTION REQUIRED";
+  document.getElementById("pmoHealthText").textContent=`${ownership}% owner coverage · ${coverage}% target-date coverage · ${active} active attention items`;
+  const deg=Math.round(score*3.6);
+  document.getElementById("pmoRing").style.background=`conic-gradient(#078a58 0deg,#078a58 ${deg}deg,#e6edf3 ${deg}deg 360deg)`;
+
+  const checks=[
+    ["Tracker coverage",total>0,"All work packages represented in the control base"],
+    ["Action ownership",ownership>=95,`${owned} of ${actions.length} action records have an assigned owner`],
+    ["Target dates",coverage>=90,`${dated} of ${actions.length} action records have a usable target date`],
+    ["Management attention",active>=0,`${active} non-NORMAL records available for review`],
+    ["Target vs Actual",true,"Performance control is enabled"]
+  ];
+  document.getElementById("controlChecks").innerHTML=checks.map(x=>`
+    <div class="pmo-check">
+      <div><div class="pmo-check-title">${x[0]}</div><div class="pmo-check-sub">${x[2]}</div></div>
+      <span class="pmo-state ${x[1]?"ok":"warn"}">${x[1]?"OK":"REVIEW"}</span>
+    </div>`).join("");
 }
 (async()=>{await fillFilters();await load()})()
 </script>
