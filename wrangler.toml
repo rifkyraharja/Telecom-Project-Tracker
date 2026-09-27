@@ -1,0 +1,14 @@
+name = "telecom-project-tracker"
+main = "src/worker.js"
+compatibility_date = "2026-09-27"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+run_worker_first = true
+not_found_handling = "single-page-application"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "telecom-project-tracker"
+database_id = "23f35588-5a6c-470f-92bf-386e4599b562"
